@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script>
+        function askToPlayFarmTogether() {
+            document.getElementById('play-popup').style.display = 'block';
+        }
+
+        function closePopup() {
+            document.getElementById('play-popup').style.display = 'none';
+        }
+
+        function redirectToMainPage() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Please start talking to me again:( I'm sorry for going crazy, can I be forgiven?</h1>
+        <button class="button small play-farm" onclick="askToPlayFarmTogether()">My request</button>
+    </div>
+    <div id="play-popup" class="popup">
+        <p>Can we play Farm Together?</p>
+        <button onclick="closePopup()">Close</button>
+        <a href="https://store.steampowered.com/app/2418520/Farm_Together_2/" class="button">Sure</a>
+    </div>
+</body>
+</html>
